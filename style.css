@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0b1a2b; /* dark blue */
+    color: #ffffff; /* white text */
+    line-height: 1.6;
+}
+
+/* HERO HEADER */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #102a43; /* slightly lighter dark blue */
+    border-bottom: 2px solid #63b3ed; /* light blue accent */
+}
+
+.profile-pic {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #63b3ed; /* light blue */
+    margin-bottom: 10px;
+}
+
+/* MAIN CONTAINER */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+/* CARDS */
+.card {
+    background-color: #102a43; /* dark blue card */
+    border: 1px solid #1f3b57;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: 0.2s;
+}
+
+.card:hover {
+    border-color: #63b3ed;
+    transform: translateY(-2px);
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* HEADINGS */
+h2 {
+    color: #63b3ed; /* light blue */
+    margin-top: 0;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+}
+
+td {
+    padding: 6px;
+    color: #ffffff;
+}
+
+/* LIST */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
